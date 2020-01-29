@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "352756332250",
+    "firebase_url": "https://otpapp-xpressodev.firebaseio.com",
+    "project_id": "otpapp-xpressodev",
+    "storage_bucket": "otpapp-xpressodev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352756332250:android:90ae754b0c060256be17e3",
+        "android_client_info": {
+          "package_name": "com.xpressodev.otpapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352756332250-ol6dfc7m3s2j5onoifjb726oerr7j8v8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xpressodev.otpapp",
+            "certificate_hash": "0e3be1343ffd77ce7d8a55ab383fa8187b9bf837"
+          }
+        },
+        {
+          "client_id": "352756332250-ddi38iobp3el4qc0orq05r197bb3gojv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMWYGoj_0nh0VJr3qHvSSo3KKtVINKT4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352756332250-ddi38iobp3el4qc0orq05r197bb3gojv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
