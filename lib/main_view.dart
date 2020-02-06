@@ -7,7 +7,7 @@ class MainView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("OTP SENDER"),
+        title: Text("Pursat SMS"),
       ),
       drawer: Drawer(
         child: ListView(

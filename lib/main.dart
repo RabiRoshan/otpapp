@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       ),
       themedWidgetBuilder: (context, theme) {
         return MaterialApp(
-          title: 'OTP APP',
+          title: 'Pursat SMS',
           theme: theme,
           home: MainView(),
         );
