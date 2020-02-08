@@ -32,8 +32,8 @@ class _SendSMSState extends State<SendSMS> {
               Map<String, dynamic> dataItem = Map.from(snapshot.value);
 
               if (!dataItem["Sent"]) {
-                SmsMessage message = SmsMessage(
-                    dataItem['Number'].toString(), dataItem['OTP'].toString());
+                SmsMessage message =
+                    SmsMessage(dataItem['Number'].toString(), dataItem['OTP']);
                 message.onStateChanged.listen((state) {
                   if (state == SmsMessageState.Sent) {
                     print("SMS is sent to ${dataItem['Name']}!");
@@ -45,6 +45,8 @@ class _SendSMSState extends State<SendSMS> {
                     registrees.child(snapshot.key).update({
                       "Sent": true,
                     });
+                  } else if (state == SmsMessageState.Fail) {
+                    print("here");
                   }
                 });
                 sender.sendSms(message);
