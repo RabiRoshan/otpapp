@@ -30,7 +30,7 @@ class _SendSMSState extends State<SendSMS> {
             itemBuilder: (BuildContext context, DataSnapshot snapshot,
                 Animation<double> animation, int index) {
               Map<String, dynamic> dataItem = Map.from(snapshot.value);
-
+              print(dataItem["OTP"].length);
               if (!dataItem["Sent"]) {
                 SmsMessage message =
                     SmsMessage(dataItem['Number'].toString(), dataItem['OTP']);
@@ -46,7 +46,7 @@ class _SendSMSState extends State<SendSMS> {
                       "Sent": true,
                     });
                   } else if (state == SmsMessageState.Fail) {
-                    print("here");
+                    print(message.body);
                   }
                 });
                 sender.sendSms(message);
